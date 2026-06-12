@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1117" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="VIDYA STEM" />
+  <meta name="description" content="Tinkering Lab Inventory Audit System" />
+  <title>VIDYA STEM – Inventory</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./css/style.css?v=3.0.2" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="app">
+
+    <!-- ════════════════════════════════════
+       LOGIN VIEW
+  ════════════════════════════════════ -->
+    <section id="login-view" class="view view--active">
+      <div id="login-card">
+        <div class="login-logo">
+          <div class="login-logo-icon"><i class="fa-solid fa-flask-vial"></i></div>
+          <div class="login-logo-text">
+            <h1>VIDYA STEM</h1>
+            <p>Inventory Audit System</p>
+          </div>
+        </div>
+
+        <h2 class="login-title">Welcome Back</h2>
+        <p class="login-sub">Sign in to your school account</p>
+
+        <div class="form-group">
+          <label class="form-label" for="login-username">Username</label>
+          <div class="input-wrap">
+            <i class="fi fa-solid fa-user"></i>
+            <input class="form-input" id="login-username" type="text" placeholder="Enter username"
+              autocomplete="username" autocapitalize="none" spellcheck="false" />
+          </div>
+        </div>
+
+        <div class="form-group" id="teacher-group" style="display: none;">
+          <label class="form-label" for="login-teacher">Teacher Name</label>
+          <div class="input-wrap">
+            <i class="fi fa-solid fa-chalkboard-user"></i>
+            <input class="form-input" id="login-teacher" type="text" placeholder="Enter teacher name"
+              autocomplete="off" spellcheck="false" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <div class="input-wrap">
+            <i class="fi fa-solid fa-lock"></i>
+            <input class="form-input" id="login-password" type="password" placeholder="Enter password"
+              autocomplete="current-password" />
+            <button class="toggle-pwd" id="toggle-pwd" type="button" aria-label="Toggle password">
+              <i class="fa-solid fa-eye-slash"></i>
+            </button>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="login-btn">
+          <span>Sign In</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p style="text-align:center;font-size:11px;color:var(--text-3);margin-top:20px">
+          <i class="fa-solid fa-shield-halved" style="color:var(--accent)"></i>
+          Secured with SHA-256 authentication
+        </p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+       HOME VIEW (School User)
+  ════════════════════════════════════ -->
+    <section id="home-view" class="view">
+      <div class="home-header">
+        <div class="home-avatar" id="home-avatar">D</div>
+        <div>
+          <div class="home-user-name" id="home-user-name">School Name</div>
+          <div class="home-user-role" id="home-user-role">SCHOOL</div>
+        </div>
+        <div class="home-header-actions">
+          <button class="icon-btn" id="btn-history" style="display:none" title="Audit History">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </button>
+          <button class="icon-btn" id="home-logout" title="Sign Out">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="home-section-title">Select Lab to Audit</div>
+      <div class="scroll-area">
+        <div id="lab-grid"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+       SWIPE AUDIT VIEW
+  ════════════════════════════════════ -->
+    <section id="swipe-audit-view" class="view">
+      <!-- Top bar -->
+      <div class="sw-topbar">
+        <button class="icon-btn" onclick="app.switchView('home-view')" title="Back">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <h2 id="sw-lab-name">Lab Audit</h2>
+        <span class="sw-progress-text">
+          <span id="sw-progress-done">0</span>/<span id="sw-progress-total">0</span>
+        </span>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="sw-progress-track">
+        <div class="sw-progress-bar" id="sw-progress-bar"></div>
+      </div>
+
+      <!-- Gesture hint -->
+      <div class="sw-hint">
+        <span class="sw-hint-item" style="color:var(--present)"><i class="fa-solid fa-arrow-right"></i> Present</span>
+        <span class="sw-hint-item" style="color:var(--broken)"><i class="fa-solid fa-arrow-left"></i> Broken</span>
+        <span class="sw-hint-item" style="color:var(--missing)"><i class="fa-solid fa-arrow-up"></i> Missing</span>
+        <span class="sw-hint-item" style="color:var(--text-3)"><i class="fa-solid fa-arrow-down"></i> Undo</span>
+      </div>
+
+      <!-- Card stage -->
+      <div id="sw-stage" class="scroll-area">
+        <!-- Empty state -->
+        <div id="sw-empty">
+          <i class="fa-solid fa-clipboard-check"></i>
+          <p>All items reviewed!</p>
+          <p style="font-size:13px;color:var(--text-3)">Submit your audit below</p>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <div class="sw-submit-row">
+        <button id="sw-submit-btn" disabled>
+          <i class="fa-solid fa-paper-plane"></i>
+          Submit Audit
+        </button>
+      </div>
+
+      <!-- Quantity Spinner Container (for components with quantity > 1) -->
+      <div id="sw-qty-container" style="display: none; padding: 10px 20px; background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 13px; font-weight: 600; color: var(--text-2);">Select Quantity affected:</span>
+          <div class="sw-qty-spinner" style="display: flex; align-items: center; gap: 8px; background: var(--bg3); border: 1.5px solid var(--border); border-radius: 20px; padding: 3px 6px;">
+            <button id="sw-qty-minus" type="button" style="background: none; border: none; color: var(--text-2); width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; transition: color 0.2s;"><i class="fa-solid fa-minus"></i></button>
+            <input type="number" id="sw-qty-num-input" min="1" max="1" value="1" readonly style="width: 44px; text-align: center; background: none; border: none; color: var(--accent); font-family: var(--font-head); font-weight: 700; font-size: 15px; outline: none; -moz-appearance: textfield;" />
+            <button id="sw-qty-plus" type="button" style="background: none; border: none; color: var(--text-2); width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; transition: color 0.2s;"><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="sw-actions">
+        <button class="sw-act-btn sw-act-btn--broken" id="sw-btn-broken">
+          <i class="fa-solid fa-circle-exclamation" style="color:var(--broken)"></i>
+          Broken
+        </button>
+
+        <button class="sw-undo-btn" id="sw-btn-undo" title="Undo">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+
+        <button class="sw-act-btn sw-act-btn--present" id="sw-btn-present">
+          <i class="fa-solid fa-circle-check" style="color:var(--present)"></i>
+          Present
+        </button>
+
+        <button class="sw-act-btn sw-act-btn--missing" id="sw-btn-missing" style="grid-column:1/4">
+          <i class="fa-solid fa-circle-xmark" style="color:var(--missing)"></i>
+          Missing
+        </button>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+       RESULT VIEW
+  ════════════════════════════════════ -->
+    <section id="result-view" class="view">
+      <div class="result-header">
+        <h2 id="result-lab">Lab Audit</h2>
+        <div class="result-date" id="result-date"></div>
+        <div class="result-auditor" id="result-auditor" style="font-size: 13px; color: var(--accent); margin-top: 4px; font-weight: 600;"></div>
+      </div>
+
+      <div class="scroll-area">
+        <!-- Score ring -->
+        <div class="result-score-ring">
+          <div class="result-pct" id="result-pct">0%</div>
+          <div class="result-pct-label">Items Well Present</div>
+        </div>
+
+        <!-- Stats grid -->
+        <div class="result-stats">
+          <div class="result-stat result-stat--p">
+            <div class="result-stat-num" id="result-present">0</div>
+            <div class="result-stat-lbl">Present</div>
+          </div>
+          <div class="result-stat result-stat--b">
+            <div class="result-stat-num" id="result-broken">0</div>
+            <div class="result-stat-lbl">Broken</div>
+          </div>
+          <div class="result-stat result-stat--m">
+            <div class="result-stat-num" id="result-missing">0</div>
+            <div class="result-stat-lbl">Missing</div>
+          </div>
+          <div class="result-stat">
+            <div class="result-stat-num" id="result-total">0</div>
+            <div class="result-stat-lbl">Total</div>
+          </div>
+        </div>
+
+        <div class="result-issues-title">Issues Found</div>
+        <div id="result-issues"></div>
+
+        <!-- Actions -->
+        <div class="result-actions">
+          <button class="btn-secondary" id="btn-export-img">
+            <i class="fa-solid fa-image"></i> Export as Image
+          </button>
+          <button class="btn-secondary" id="btn-export-csv">
+            <i class="fa-solid fa-file-csv"></i> Export as CSV
+          </button>
+          <button class="btn-primary" id="btn-result-home">
+            <i class="fa-solid fa-house"></i> Back to Home
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+       HISTORY VIEW
+  ════════════════════════════════════ -->
+    <section id="history-view" class="view">
+      <div class="page-header">
+        <button class="btn-back" id="history-back"><i class="fa-solid fa-chevron-left"></i></button>
+        <h2>Audit History</h2>
+      </div>
+      <div class="scroll-area">
+        <div id="history-list"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+       ADMIN VIEW
+  ════════════════════════════════════ -->
+    <section id="admin-view" class="view">
+      <div class="admin-header">
+        <div class="admin-header-top">
+          <h1>Admin Dashboard</h1>
+          <button class="icon-btn" id="admin-logout" title="Sign Out">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+        </div>
+        <div class="admin-stats-row">
+          <div class="admin-stat-card">
+            <div class="admin-stat-num" id="admin-stat-audits">0</div>
+            <div class="admin-stat-lbl">Audits</div>
+          </div>
+          <div class="admin-stat-card">
+            <div class="admin-stat-num" id="admin-stat-schools">0</div>
+            <div class="admin-stat-lbl">Schools</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-section-title">Schools</div>
+      <div class="scroll-area">
+        <div id="admin-school-grid"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+       ADMIN DETAIL VIEW
+  ════════════════════════════════════ -->
+    <section id="admin-detail-view" class="view">
+      <div class="page-header">
+        <button class="btn-back" id="admin-detail-back"><i class="fa-solid fa-chevron-left"></i></button>
+        <h2 id="admin-detail-school">School</h2>
+      </div>
+      <div class="scroll-area">
+        <div id="admin-detail-list"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+       SHARED OVERLAYS
+  ════════════════════════════════════ -->
+
+    <!-- Loading overlay -->
+    <div id="loading-overlay">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Loading…</div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Confirm dialog -->
+    <div id="confirm-dialog">
+      <div class="confirm-box">
+        <div class="confirm-msg"></div>
+        <div class="confirm-btns">
+          <button class="btn-confirm-cancel">Cancel</button>
+          <button class="btn-confirm-ok">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- #app -->
+
+  <!-- ── Scripts (order matters) ── -->
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  
+  <!-- html2canvas (Required for PNG Export rendering) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <script src="./js/config.js?v=3.0.2"></script>
+  <script src="./js/auth.js?v=3.0.2"></script>
+  <script src="./js/data.js?v=3.0.2"></script>
+  <script src="./js/ui.js?v=3.0.2"></script>
+  <script src="./js/telegram.js?v=3.0.2"></script>
+  <script src="./js/export.js?v=3.0.2"></script>
+  <script src="./js/swipe.js?v=3.0.2"></script>
+  <script src="./js/app.js?v=3.0.2"></script>
+
+</body>
+
+</html>

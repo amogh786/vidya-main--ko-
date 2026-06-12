@@ -1,0 +1,102 @@
+[
+  {
+    "code": "COMP-001",
+    "name": "Laptop (Dell Latitude)",
+    "img": "./data/images/lab/laptop.jpg",
+    "category": "Computing",
+    "domain": "COMP",
+    "price": 55000,
+    "quantity": 20,
+    "description": "Dell Latitude i5 laptop for student programming and design work."
+  },
+  {
+    "code": "COMP-002",
+    "name": "Wireless Mouse & Keyboard",
+    "img": "./data/images/lab/wireless_peripherals.jpg",
+    "category": "Computing",
+    "domain": "COMP",
+    "price": 1200,
+    "quantity": 20,
+    "description": "Wireless combo set for lab computers."
+  },
+  {
+    "code": "COMP-003",
+    "name": "HDMI Projector",
+    "img": "./data/images/lab/projector.jpg",
+    "category": "AV Equipment",
+    "domain": "COMP",
+    "price": 32000,
+    "quantity": 2,
+    "description": "Full-HD HDMI projector for classroom presentations."
+  },
+  {
+    "code": "COMP-004",
+    "name": "Webcam HD 1080p",
+    "img": "./data/images/lab/webcam.jpg",
+    "category": "AV Equipment",
+    "domain": "COMP",
+    "price": 2500,
+    "quantity": 10,
+    "description": "1080p USB webcam for video conferencing and recordings."
+  },
+  {
+    "code": "COMP-005",
+    "name": "Smart Board 75-inch",
+    "img": "./data/images/lab/smart_board.jpg",
+    "category": "AV Equipment",
+    "domain": "COMP",
+    "price": 180000,
+    "quantity": 1,
+    "description": "Interactive touchscreen smart board for collaborative learning."
+  },
+  {
+    "code": "COMP-006",
+    "name": "Network Switch (24-port)",
+    "img": "./data/images/lab/network_switch.jpg",
+    "category": "Networking",
+    "domain": "COMP",
+    "price": 8500,
+    "quantity": 2,
+    "description": "Managed 24-port gigabit Ethernet switch."
+  },
+  {
+    "code": "COMP-007",
+    "name": "USB Hub (7-port)",
+    "img": "./data/images/lab/usb_hub.jpg",
+    "category": "Computing",
+    "domain": "COMP",
+    "price": 599,
+    "quantity": 15,
+    "description": "7-port powered USB 3.0 hub."
+  },
+  {
+    "code": "COMP-008",
+    "name": "External SSD 1TB",
+    "img": "./data/images/lab/external_ssd.jpg",
+    "category": "Computing",
+    "domain": "COMP",
+    "price": 6500,
+    "quantity": 5,
+    "description": "Portable 1TB USB-C SSD for data backup."
+  },
+  {
+    "code": "TOOL-001",
+    "name": "Screwdriver Set (21pcs)",
+    "img": "./data/images/lab/screwdriver_set.jpg",
+    "category": "Tools",
+    "domain": "TOOL",
+    "price": 450,
+    "quantity": 5,
+    "description": "21-piece precision screwdriver set with magnetic tips."
+  },
+  {
+    "code": "TOOL-002",
+    "name": "Digital Vernier Caliper",
+    "img": "./data/images/lab/vernier_caliper.jpg",
+    "category": "Measurement",
+    "domain": "TOOL",
+    "price": 850,
+    "quantity": 10,
+    "description": "150mm digital vernier caliper for precise measurements."
+  }
+]

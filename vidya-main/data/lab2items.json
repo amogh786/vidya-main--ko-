@@ -1,0 +1,522 @@
+[
+  {
+    "code": "SDIY-001",
+    "name": "Arduino Uno R3",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-002",
+    "name": "Breadboard Large",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-003",
+    "name": "Breadboard Supply",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-004",
+    "name": "Push Button",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 5,
+    "description": ""
+  },
+  {
+    "code": "SDIY-005",
+    "name": "Potentiometer (1k,5k,10k)",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 3,
+    "description": ""
+  },
+  {
+    "code": "SDIY-006",
+    "name": "Resistor Pack (30 Type)",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-007",
+    "name": "PIR",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-008",
+    "name": "Straight Pins",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-009",
+    "name": "Right Angle Pins",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-010",
+    "name": "5V Relay",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-011",
+    "name": "IC 74HC595",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-012",
+    "name": "PN2222",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-013",
+    "name": "Bar Graph",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-014",
+    "name": "7 Segment 4 Digit",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-015",
+    "name": "Water Pump Mini",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-016",
+    "name": "DC motor 150 RPM BO",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-017",
+    "name": "US Holder",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-018",
+    "name": "Photoresistor",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "SDIY-019",
+    "name": "DHT11",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-020",
+    "name": "ESP01 8266",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-021",
+    "name": "7 Segment 1 Digit",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-022",
+    "name": "Active Buzzer",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "SDIY-023",
+    "name": "Passive Buzzer",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "SDIY-024",
+    "name": "HC SR04",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-025",
+    "name": "5V Relay",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-026",
+    "name": "RGB LED",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-027",
+    "name": "SG90 Servo - 360 Degree",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-028",
+    "name": "4x4 Keypad",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-029",
+    "name": "9V Battery Holder",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-030",
+    "name": "65pcs Jumper Pins",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 10,
+    "description": ""
+  },
+  {
+    "code": "SDIY-031",
+    "name": "ULN2003 Driver",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-032",
+    "name": "Stepper Motor (28BYJ48)",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-033",
+    "name": "IR + Receiver",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-034",
+    "name": "1602 I2C",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-035",
+    "name": "L298N Motor Driver",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-036",
+    "name": "L293D Motor Driver",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-037",
+    "name": "Joystick Module",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-038",
+    "name": "RTC DS3231",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-039",
+    "name": "2 Channel Relay",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-040",
+    "name": "RC522",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-041",
+    "name": "NPN S8050",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-042",
+    "name": "Water Sensor",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-043",
+    "name": "1N4001",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-044",
+    "name": "PCB Board",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-045",
+    "name": "PCB Ruler 15cm",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-046",
+    "name": "HC05",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-047",
+    "name": "TTP223B",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-048",
+    "name": "Raindrop Sensor",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-049",
+    "name": "IR",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "SDIY-050",
+    "name": "Soil Sensor",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-051",
+    "name": "Capacitor Box",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "SDIY-052",
+    "name": "Box Packing",
+    "img": "",
+    "category": "",
+    "domain": "STEM",
+    "price": "",
+    "quantity": 1,
+    "description": ""
+  }
+]

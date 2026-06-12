@@ -1,0 +1,242 @@
+[
+  {
+    "code": "Quar-001",
+    "name": "Quarky Robot",
+    "img": "./data/images/lab/Quarky-Robot.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 2000,
+    "quantity": 1,
+    "description": "Quarky robotic core component unit."
+  },
+  {
+    "code": "Quar-002",
+    "name": "Quarky Robot",
+    "img": "./data/images/lab/Quarky-Robot.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 2000,
+    "quantity": 1,
+    "description": "Quarky robotic core component unit."
+  },
+  {
+    "code": "Quar-003",
+    "name": "Blue Arena",
+    "img": "./data/images/lab/Blue-Arena.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 20,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-004",
+    "name": "Green Arena",
+    "img": "./data/images/lab/Green-Arena.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 20,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-005",
+    "name": "Getting Started + Safety Guide",
+    "img": "./data/images/lab/Booklet.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 0,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-006",
+    "name": "AI Recognition Cards",
+    "img": "./data/images/lab/Recognition-Card.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 10,
+    "quantity": 10,
+    "description": ""
+  },
+  {
+    "code": "Quar-007",
+    "name": "Robot Face Cutouts",
+    "img": "./data/images/lab/cutouts.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 20,
+    "quantity": 8,
+    "description": ""
+  },
+  {
+    "code": "Quar-008",
+    "name": "QR Code Sticker",
+    "img": "./data/images/lab/QR-code.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 10,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-009",
+    "name": "USB C Cable",
+    "img": "./data/images/lab/USB-C-Cable.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 250,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-010",
+    "name": "Plastic Box",
+    "img": "./data/images/lab/Box.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 100,
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "Quar-011",
+    "name": "Servo Motor",
+    "img": "./data/images/lab/Geek-Servo.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 350,
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "Quar-012",
+    "name": "Battery",
+    "img": "./data/images/lab/Battery.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 300,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-013",
+    "name": "Ultrasonic Sensor",
+    "img": "./data/images/lab/Ultrasonic-Sensor.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 120,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-014",
+    "name": "Motor",
+    "img": "./data/images/lab/N20-Motor.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 300,
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "Quar-015",
+    "name": "Wheel",
+    "img": "./data/images/lab/Wheel.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 100,
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "Quar-016",
+    "name": "Motor Mount",
+    "img": "./data/images/lab/Motor-Mount.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 50,
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "Quar-017",
+    "name": "Spacers",
+    "img": "./data/images/lab/Spacer.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 20,
+    "quantity": 10,
+    "description": ""
+  },
+  {
+    "code": "Quar-018",
+    "name": "Pin Jumper Cable",
+    "img": "./data/images/lab/4-pin-jumper.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 10,
+    "quantity": 4,
+    "description": ""
+  },
+  {
+    "code": "Quar-019",
+    "name": "Screwdriver",
+    "img": "./data/images/lab/Screw-Driver.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 50,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-020",
+    "name": "Motor Connector",
+    "img": "",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 20,
+    "quantity": 2,
+    "description": ""
+  },
+  {
+    "code": "Quar-021",
+    "name": "Purple Plastic Set",
+    "img": "./data/images/lab/Purple-Plastic.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 150,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-022",
+    "name": "Green Plastic Set",
+    "img": "./data/images/lab/Green-Plastic.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 150,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-023",
+    "name": "Blue Plastic Set",
+    "img": "./data/images/lab/Blue-Plastic.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 150,
+    "quantity": 1,
+    "description": ""
+  },
+  {
+    "code": "Quar-024",
+    "name": "Fastener Set",
+    "img": "./data/images/lab/Screw.png",
+    "category": "Robotics Component",
+    "domain": "STEM",
+    "price": 50,
+    "quantity": 1,
+    "description": ""
+  }
+]
