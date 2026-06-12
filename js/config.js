@@ -42,7 +42,7 @@ const APP_CONFIG = {
 
   /* ── Swipe thresholds ── */
   swipe: {
-    threshold: 385,
+    threshold: 185,
     flyDistance: 250
   },
 
